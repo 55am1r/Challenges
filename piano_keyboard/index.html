@@ -6,41 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Piano-Challenge</title>
 </head>
 
-<body>
+<body oncopy="return false" oncut="return false">
     <div class="container">
         <div class="piano">
             <div class="keys">
-                <div class="main-key" id="main-keys">
-                    A <div class="inner-key" id="innerkey">W</div>
+                <button class="main-key" id="main-keys-1">
+                    A
+                </button>
+                <button class="main-key" id="main-keys-2">
+                    S
+                </button>
+                <div class="left">
+                    <button class="inner-key" id="inner-key-1" >W</button>
+                    <button class="inner-key" id="inner-key-2">E</button>
                 </div>
-                <div class="main-key" id="main-keys">
-                    S <div class="inner-key" id="inner-key">E</div>
+                <button class="main-key" id="main-keys-3">D</button>
+                <button class="main-key" id="main-keys-4">
+                    F
+                </button>
+                <button class="main-key" id="main-keys-5">
+                    G
+                </button>
+                <button class="main-key" id="main-keys-6">
+                    H
+                </button>
+                <div class="middle">
+                    <button class="inner-key" id="inner-key-3">T</button>
+                    <button class="inner-key" id="inner-key-4">Y</button>
+                    <button class="inner-key" id="inner-key-5">U</button>
                 </div>
-                <div class="main-key" id="main-keys">D</div>
-                <div class="main-key" id="main-keys">
-                    F <div class="inner-key" id="inner-key">T</div>
-                </div>
-                <div class="main-key" id="main-keys">
-                    G <div class="inner-key" id="inner-key">Y</div>
-                </div>
-                <div class="main-key" id="main-keys">
-                    H <div class="inner-key" id="inner-key">U</div>
-                </div>
-                <div class="main-key" id="main-keys">
+                <button class="main-key" id="main-keys-7">
                     J
+                </button>
+                <button class="main-key" id="main-keys-8">
+                    K
+                </button>
+                <button class="main-key" id="main-keys-9">
+                    L
+                </button>
+                <div class="right">
+                    <button class="inner-key" id="inner-key-6">O</button>
+                    <button class="inner-key" id="inner-key-7">P</button>
                 </div>
-                <div class="main-key" id="main-keys">
-                    K <div class="inner-key" id="inner-key">O</div>
-                </div>
-                <div class="main-key" id="main-keys">
-                    L <div class="inner-key" id="inner-key">P</div>
-                </div>
-                <div class="main-key last" id="main-keys">
+                <button class="main-key last" id="main-keys-10">
                     ;
-                </div>
+                </button>
             </div>
         </div>
     </div>
