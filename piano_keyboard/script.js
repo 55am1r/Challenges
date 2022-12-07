@@ -3,6 +3,8 @@ const audio = new Audio();
 document.getElementById("volume-range").value = 75;
 audio.volume = document.getElementById("volume-range").value / 100;
 
+const inner_key = document.getElementsByClassName("inner-key");
+
 const mk_audio_1 = [
   "src/key01.mp3",
   "src/key02.mp3",
@@ -23,16 +25,31 @@ const mk_audio_1 = [
   "src/key17.mp3",
 ];
 
+// const mk_audio_2 = [
+//   "src/key11.mp3",
+//   "src/key12.mp3",
+//   "src/key13.mp3",
+//   "src/key14.mp3",
+//   "src/key15.mp3",
+//   "src/key16.mp3",
+//   "src/key17.mp3",
+// ];
+
 document.getElementById("volume-range").addEventListener("change", (e) => {
   audio.volume = e.target.value / 100;
 });
 
-// for (let i in inner_key) {
-//   inner_key[i].addEventListener("mouseover", () => {
-//     const newAudio = new Audio(mk_audio_2[i]);
+// let inner = 0;
+
+// for (let i of inner_key) {
+//   console.log(i);
+//   i.addEventListener("mouseover", () => {
+//     const newAudio = new Audio(mk_audio_2[inner]);
 //     newAudio.volume = audio.volume;
 //     newAudio.play();
 //   });
+
+//   inner++;
 // }
 
 // for (let i in main_key) {
@@ -42,6 +59,7 @@ document.getElementById("volume-range").addEventListener("change", (e) => {
 //     newAudio.play();
 //   });
 // }
+
 document.getElementById("main-keys-1").addEventListener("mouseover", () => {
   const newAudio = new Audio(mk_audio_1[0]);
   newAudio.volume = audio.volume;
